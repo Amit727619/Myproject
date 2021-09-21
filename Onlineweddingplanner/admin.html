@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="stylee.css" />
+        <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+            integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="logo-details">
+                <span class="logo_name">Wedding PLanner</span>
+            </div>
+
+            <ul class="nav-links">
+                <li>
+                    <a href="#" class="active">
+                        <i class="fas fa-portrait"></i>
+                        <span class="links_name"> Admin name</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="far fa-image"></i>
+                        <span class="links_name">Vendorlist</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="far fa-camera-alt"></i>
+                        <span class="links_name">Photographer</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="far fa-camera-alt"></i>
+                        <span class="links_name">Choreographer</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="far fa-camera-alt"></i>
+                        <span class="links_name">Makeup</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="far fa-camera-alt"></i>
+                        <span class="links_name">Decorators</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bx bx-cog"></i>
+                        <span class="links_name">Setting</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="far fa-image"></i>
+                        <span class="links_name">Vendor's</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="far fa-image"></i>
+                        <span class="links_name">Favrorites</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="far fa-image"></i>
+                        <span class="links_name">Change Password</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <section class="home-section">
+            <nav>
+                <div class="sidebar-button">
+                    <i class="bx bx-menu sidebarBtn"></i>
+                    <span class="dashboard">Dashboard</span>
+                </div>
+                <div class="pr">
+                    <!--<img src="images/profile.jpg" alt="">-->
+                    <button style="color: white; padding: 13px; background-color: rgb(233, 77, 103); border-radius: 7px">
+                        <a href="/home">
+                            <i class="bx bx-log-out" style="color: white"></i>
+                            <span class="links_name" style="color: white">Log out</span>
+                        </a>
+                    </button>
+                </div>
+            </nav>
+            <div class="home-content">
+                <h3>Booking List</h3>
+                <div class="overview-boxes">
+                    <div class="box" style="padding: 26px">
+                        <div class="right-side">
+                            <a href="/indexx" class="box-topic" style="text-decoration: none">Photographer </a><br />
+                            <div class="indicator">
+                                <span class="text"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box" style="padding: 26px">
+                        <div class="right-side">
+                            <a href=" " class="box-topic" style="text-decoration: none">Choreographer </a><br />
+                            <div class="indicator">
+                                <span class="text"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box" style="padding: 26px">
+                        <div class="right-side">
+                            <a href=" " class="box-topic" style="text-decoration: none">Makeup</a> <br />
+                            <div class="indicator">
+                                <span class="text"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box" style="padding: 26px">
+                        <div class="right-side">
+                            <a href=" " class="box-topic" style="text-decoration: none">Decoration </a><br />
+                            <div class="indicator">
+                                <span class="text"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sales-boxes">
+                <div class="recent-sales box">
+                    <div class="title">Recent Booked</div>
+                    <div class="sales-details">
+                        <ul class="details">
+                            <li class="topic">Name</li>
+                        </ul>
+                        <ul class="details">
+                            <li class="topic">Mobile No</li>
+                        </ul>
+                        <ul class="details">
+                            <li class="topic">Gmail</li>
+                        </ul>
+                        <ul class="details">
+                            <li class="topic">Address</li>
+                        </ul>
+                        <ul class="details">
+                            <li class="topic">Vendor Name</li>
+                        </ul>
+                        <ul class="details">
+                            <li class="topic">Date</li>
+                        </ul>
+                    </div>
+                    <div class="button">
+                        <a href="#">See All</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            let sidebar = document.querySelector(".sidebar");
+            let sidebarBtn = document.querySelector(".sidebarBtn");
+            sidebarBtn.onclick = function () {
+                sidebar.classList.toggle("active");
+                if (sidebar.classList.contains("active")) {
+                    sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+                } else sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+            };
+        </script>
+    </body>
+</html>

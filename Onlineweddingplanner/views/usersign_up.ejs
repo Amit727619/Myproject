@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>email</th>
+                    <th>Mobno</th>
+                    <th>address</th>
+                    <th>password</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% user.forEach(function(user){ %>
+                <tr>
+                    <td><%= user.name%></td>
+                    <td><%= user.email %></td>
+                    <td><%= user.mobno %></td>
+                    <td><%= user.address %></td>
+                    <td><%= user.password %></td>
+                    <td>
+                        <a href="edit/<%= user.srno %>"><button class="btn btn-sm btn-primary">Edit</button></a>
+                        <a href="delete/<%= user.srno%>"><button class="btn btn-sm btn-danger">Delete</button></a>
+                    </td>
+                </tr>
+                <% }); %>
+                <div class="addd">
+                    <a href="/addd" style="margin-left: 30px"><button class="btn btn-sm btn-primary">Add</button></a>
+                </div>
+            </tbody>
+        </table>
+    </body>
+</html>
