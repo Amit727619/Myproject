@@ -11,8 +11,7 @@ A React.js-based web app to plan wedding events, manage guest lists, tasks, and 
 Watch it here: [Project Demo Video](https://bit.ly/3meSRfA)
 
 ## 📂 Source Code
-[GitHub Repository]
-(https://bit.ly/3zS82A7)
+[GitHub Repository](https://github.com/Amit727619/Myproject)
 ## 📌 Features
 - Add & manage guest list
 - Task tracking & completion
